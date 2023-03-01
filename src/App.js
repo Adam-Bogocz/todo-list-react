@@ -5,7 +5,6 @@ import Header from "./Header"
 import Section from "./Section";
 import Tasks from "./Tasks";
 
-
 const tasks = [
   { id: 1, content: "przejść na Reacta", done: true },
   { id: 2, content: "zjeść kolację", done: false },

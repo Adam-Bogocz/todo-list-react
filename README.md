@@ -1,8 +1,9 @@
 # Task list
-[See my Task List](https://adam-bogocz.github.io/TODO-LIST-JS/)
+[See my Task List](https://adam-bogocz.github.io/todo-list-react/)
 
 
-![Demo](https://github.com/Adam-Bogocz/TODO-LIST-JS/blob/main/images/demo.gif?raw=true)
+![Demo](https://github.com/Adam-Bogocz/todo-list-react/blob/main/public/demo.gif)
+
 
 ## Technologies:
 - Html

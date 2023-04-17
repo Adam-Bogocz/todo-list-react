@@ -1,4 +1,6 @@
 # Task list
+New feature. Now when you add new tasks, the task list will be up-to-date when you reopen it on the same device.
+
 [See my Task List](https://adam-bogocz.github.io/todo-list-react/)
 
 

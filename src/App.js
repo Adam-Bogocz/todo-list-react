@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Buttons from "./Buttons";
 import Container from "./Container";
 import Form from "./Form";
@@ -8,10 +8,11 @@ import Tasks from "./Tasks";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przejść na Reacta", done: true },
-    { id: 2, content: "zjeść kolację", done: false },
-  ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem(`tasks`)) || [
+      { content: "Dodaj zadanie do wykonania", done: false, id: 1 },
+    ]
+  );
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
@@ -52,6 +53,10 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -81,5 +86,4 @@ function App() {
     </Container>
   );
 }
-
 export default App;
